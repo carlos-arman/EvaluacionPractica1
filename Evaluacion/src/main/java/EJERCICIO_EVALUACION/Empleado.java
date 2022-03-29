@@ -26,21 +26,22 @@ public class Empleado extends Persona{
     public void leeDatos(){
          Scanner leer = new Scanner(System.in);
          System.out.println("Ingresa Tu nombre: ");
-         nombre = leer.nextLine();
+         Empleado.this.nombre = leer.nextLine();
          System.out.println("Ingresa la edad: ");
-         edad = leer.nextInt(edad);
+         this.edad = leer.nextInt(edad);
          System.out.println("Ingrese el codigo Empleado: ");
-         codigoE = leer.nextDouble();
+         this.codigoE = leer.nextDouble();
          System.out.println("Ingrese Su Direccion: ");
-         direccion = leer.nextLine();
+         this.direccion = leer.nextLine();
          System.out.println("Ingrese el Area: ");
-         AreaPertenece = leer.nextLine();
+         this.AreaPertenece = leer.nextLine();
          System.out.println("Ingrese cargo: ");
-         cargo = leer.nextLine();
+         this.cargo = leer.nextLine();
          System.out.println("Sueldo Base: ");
-         SueldoBase = leer.nextDouble();
+         this.SueldoBase = leer.nextDouble();
          System.out.println("Ingrese Fecha Ingreso: ");
-         FechaIngreso = leer.next();
+         this.FechaIngreso = leer.next();
+         
      }
     
     public void mostrarDatos(){
