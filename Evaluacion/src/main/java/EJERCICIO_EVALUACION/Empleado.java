@@ -1,59 +1,53 @@
 
 package EJERCICIO_EVALUACION;
 
-import java.util.Scanner;
 
-public class Empleado extends Persona{
+
+public class Empleado {
     public double codigoE;
     public String direccion;
     public String AreaPertenece;
     public String cargo;
     public double SueldoBase;
     public String FechaIngreso;
+    public String nombre;
+    public int edad;
     
     
+
+  
     //CONSTRUCTOR
-    public Empleado(String nombre,int edad,double codigoE,String direccion,String AreaPertenece, String cargo,double SueldoBase,String FechaIngreso){
-        super(nombre,edad);
+
+    public Empleado(double codigoE, String direccion, String AreaPertenece, String cargo, double SueldoBase, String FechaIngreso, String nombre, int edad,double isss, double afp, double renta,double salariototal, int codigoarea,String nombreArea) {
         this.codigoE = codigoE;
         this.direccion = direccion;
         this.AreaPertenece = AreaPertenece;
         this.cargo = cargo;
         this.SueldoBase = SueldoBase;
         this.FechaIngreso = FechaIngreso;
+        this.nombre = nombre;
+        this.edad = edad;
+       
     }
 
-    public void leeDatos(){
-         Scanner leer = new Scanner(System.in);
-         System.out.println("Ingresa Tu nombre: ");
-         Empleado.this.nombre = leer.nextLine();
-         System.out.println("Ingresa la edad: ");
-         this.edad = leer.nextInt(edad);
-         System.out.println("Ingrese el codigo Empleado: ");
-         this.codigoE = leer.nextDouble();
-         System.out.println("Ingrese Su Direccion: ");
-         this.direccion = leer.nextLine();
-         System.out.println("Ingrese el Area: ");
-         this.AreaPertenece = leer.nextLine();
-         System.out.println("Ingrese cargo: ");
-         this.cargo = leer.nextLine();
-         System.out.println("Sueldo Base: ");
-         this.SueldoBase = leer.nextDouble();
-         System.out.println("Ingrese Fecha Ingreso: ");
-         this.FechaIngreso = leer.next();
-         
-     }
+    Empleado() {
+       }
     
-    public void mostrarDatos(){
-        System.out.println("Su nombre es: " +getNombre());
-        System.out.println("Edad" + getEdad());
-        System.out.println("Codigo Empleado: " + codigoE);
-        System.out.println("Direccion: "+ direccion);
-        System.out.println("Area que pertenece: "+AreaPertenece);
-        System.out.println("Cargo: "+ cargo);
-        System.out.println("Sueldo Base: "+SueldoBase);
-        System.out.println("Fecha de ingreso: "+FechaIngreso);
+
+    
+
+    public void mostrarDatos() {
+        System.out.println("Su nombre es: " + this.nombre);
+        System.out.println("Edad: "  + this.edad);
+        System.out.println("Codigo Empleado: " + this.codigoE);
+        System.out.println("Direccion: "+ this.direccion);
+        System.out.println("Area que pertenece: "+ this.AreaPertenece);
+        System.out.println("Cargo: "+ this.cargo);
+        System.out.println("Sueldo: "+ this.SueldoBase);
+        System.out.println("Fecha de ingreso: "+this.FechaIngreso);
         
-    }
+        
+        
     
+}
 }
