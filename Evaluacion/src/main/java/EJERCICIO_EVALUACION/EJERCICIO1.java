@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class EJERCICIO1 {
 
     public static void main(String[] args) {
-        //
+       
         double HT;
         double PH;
         double sueldoTotal = 0;

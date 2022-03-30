@@ -49,7 +49,7 @@ public class Area {
     public void setNumeroedificio(int numeroedificio) {
         this.numeroedificio = numeroedificio;
     }
-    //
+ 
     public void DatosEdificio(){
         System.out.println("DATOS DEL EDIFICIO");
         System.out.println("Codigo de area: 123" + this.codigoarea);
