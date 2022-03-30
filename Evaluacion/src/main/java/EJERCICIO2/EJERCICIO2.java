@@ -1,5 +1,5 @@
 
-package EJERCICIO_EVALUACION;
+package EJERCICIO2;
 
 import java.util.Scanner;
 

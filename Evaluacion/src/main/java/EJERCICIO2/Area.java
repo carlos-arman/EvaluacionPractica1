@@ -1,5 +1,5 @@
 
-package EJERCICIO_EVALUACION;
+package EJERCICIO2;
 
 
 public class Area {
